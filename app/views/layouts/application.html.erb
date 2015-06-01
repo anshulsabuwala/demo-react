@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ReactDemo</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag "react" %>
+  <%= csrf_meta_tags %>
+  <script>
+  	var ModalTrigger = ReactBootstrap.ModalTrigger;
+    var Button = ReactBootstrap.Button;
+    var Modal = ReactBootstrap.Modal;
+    var Input = ReactBootstrap.Input;
+    var Label = ReactBootstrap.Label;
+    var Pager = ReactBootstrap.Pager;
+    var PageItem = ReactBootstrap.PageItem;
+    var Table = ReactBootstrap.Table;
+  </script>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
